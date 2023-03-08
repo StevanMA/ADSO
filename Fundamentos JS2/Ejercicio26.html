@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = parseInt(prompt("Ingrese un número: "));
+      /*Creamos una variable "sum" para almacenar la suma de los números pares.*/
+      let sum = 0;
+
+      /*Usamos un bucle "for" para iterar desde 0 hasta el número ingresado "num", con un incremento de 2 en cada paso. 
+      Esto significa que el bucle solo considerará los números pares.*/
+      for (let i = 0; i <= num; i += 2) {
+        /*En cada iteración, agregamos el número par actual "i" a la variable "sum".*/
+        sum += i;
+      }
+
+      document.write(
+        "La suma de todos los números pares entre 0 y " + num + " es: " + sum
+      );
+    </script>
+  </body>
+</html>

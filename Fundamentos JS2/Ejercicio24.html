@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var numero = parseInt(prompt("Ingrese un número: "));
+
+      if (numero) {
+        document.write("Números pares entre 0 y ", numero, " son:<br>");
+        /* Usamos un bucle "for" para iterar desde 0 hasta el número ingresado "numero", con un 
+        incremento de 2 en cada paso. Esto significa que el bucle solo considerará los números pares. */
+        for (let i = 0; i <= numero; i += 2) {
+          document.write(i + "<br>");
+        }
+      }
+    </script>
+  </body>
+</html>

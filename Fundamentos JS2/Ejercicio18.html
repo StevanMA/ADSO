@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      genero = prompt("Ingrese su Genero (Hombre o Mujer)");
+      edad = prompt("ingrese su edad");
+
+      if (edad >= 18 && genero === "Hombre") {
+        document.write("Bienvenido, puedes ingresar");
+      } else if (edad >= 18 && genero === "Mujer") {
+        document.write("Bienvenida, puedes ingresar");
+      } else {
+        document.write("Lo siento eres menor de edad");
+      }
+    </script>
+  </body>
+</html>

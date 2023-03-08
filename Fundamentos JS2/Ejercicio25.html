@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      num1 = parseInt(prompt("Ingrese el primer número: "));
+      num2 = parseInt(prompt("Ingrese el segundo número: "));
+
+      document.write("Números impares entre ", num1, " y ", num2, " son:<br>");
+      /*Usamos un bucle "for" para iterar desde el primer número "num1" hasta el segundo número "num2", ambos incluidos.*/
+      for (let i = num1; i <= num2; i++) {
+        /*Verificamos si el número actual "i" es impar utilizando el operador módulo "%"". Si el residuo de la división 
+        de "i" entre 2 es diferente de cero, entonces "i" es impar.*/
+        if (i % 2 != 0) {
+          document.write(i + "<br>");
+        }
+      }
+    </script>
+  </body>
+</html>

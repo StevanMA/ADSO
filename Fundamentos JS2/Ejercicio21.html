@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function esPrimo(numero) {
+        for (let i = 2; i < numero; i++) {
+          if (numero % i === 0) {
+            return false;
+          }
+        }
+        return numero !== 1;
+      }
+      numero = parseInt(prompt("Ingrese un numero"));
+      if (esPrimo(numero)) {
+        document.write("El número es primo");
+      } else {
+        document.write("El número no es primo");
+      }
+    </script>
+  </body>
+</html>

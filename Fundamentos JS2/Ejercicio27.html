@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      cadena = prompt("Ingrese una cadena de texto: ");
+      /*Creamos una variable "resultado" para almacenar la cadena de texto resultante después de reemplazar las vocales.*/
+      resultado = "";
+
+      /*Usamos un bucle "for" para iterar a través de cada caracter de la cadena de texto "cadena".*/
+      for (let i = 0; i < cadena.length; i++) {
+        /*Convertimos cada caracter a minúscula usando la función "toLowerCase()", para poder verificar si es una vocal.*/
+        let letra = cadena[i].toLowerCase();
+
+        /*Verificamos si el caracter actual es una vocal (a, e, i, o, u). Si es así, agregamos el caracter "*" a la cadena 
+        de texto resultante "resultado", de lo contrario agregamos el caracter original "cadena[i]".*/
+        if (
+          letra == "a" ||
+          letra == "e" ||
+          letra == "i" ||
+          letra == "o" ||
+          letra == "u"
+        ) {
+          resultado += "*";
+        } else {
+          resultado += cadena[i];
+        }
+      }
+
+      document.write("La cadena original: " + cadena + "<br>");
+      document.write("La cadena con vocales reemplazadas por *: " + resultado);
+    </script>
+  </body>
+</html>
