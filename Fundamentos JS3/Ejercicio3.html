@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Pedir un número al usuario
+      let numero = prompt("Ingrese un numero mayor que 0: ", "");
+
+      // Comprobar cada uno de los números desde el 1 hasta `numero` para ver si son primos o no
+      for (let i = 2; i <= numero; i++) {
+        let es_primo = true;
+
+        // Dividir i entre 2 hasta (i - 1), si alguna de las divisiones no tiene resto, no es primo
+        for (let f = 2; f < i; f++) {
+          if (i % f == 0) es_primo = false;
+        }
+
+        if (es_primo) {
+          document.write("El número " + i + " es primo.<br/>");
+        }
+      }
+    </script>
+  </body>
+</html>
